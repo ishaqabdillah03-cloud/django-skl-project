@@ -1,0 +1,47 @@
+{% extends 'base.html' %} 
+
+{% block title %}Schedule | Santri Life{% endblock %} 
+{% block page_title %}Daily Routine{% endblock %} 
+{% block subtitle %}Keseimbangan antara Ibadah & Belajar{% endblock %} 
+
+{% block content %}
+<div class="box">
+  <h3 class="section-title">Agenda Harian Santri</h3>
+  <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Waktu (WIB)</th>
+            <th>Kegiatan Utama</th>
+          </tr> 
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="time-badge">03:45 - 06:00</span></td>
+            <td>Tahajjud, Subuh, dzikir pagi & Halaqoh Al-qur'an </td>
+          </tr>
+          <tr>
+            <td><span class="time-badge">06:00 - 08:00</span></td>
+            <td>Jadwal piket, Personal Care (Mandi, Makan) & Morning Spirit</td>
+          </tr>
+          <tr>
+            <td><span class="time-badge">08:00 - 10:15</span></td>
+            <td>Pendalaman Ilmu Syar'i / Bahasa Arab</td>
+          </tr>
+          <tr>
+            <td><span class="time-badge">11:30 - 13:00</span></td>
+            <td>Dhuhur, Makan Siang & Qailulah (Tidur Siang)</td>
+          </tr>
+          <tr>
+            <td><span class="time-badge">13:00 - 15:00</span></td>
+            <td>Pendalaman Ilmu Syar'i / Bahasa Arab sesi 2</td>
+          </tr>
+          <tr>
+            <td><span class="time-badge">17:45 - 21:00</span></td>
+            <td>Maghrib, Halaqoh Qur'an, Isya & <b>IT Session</b></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+{% endblock %}

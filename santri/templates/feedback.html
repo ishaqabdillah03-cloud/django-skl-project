@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+{% block title %}System Feedback | Santri Tech{% endblock %}
+
+{% block page_title %}User Feedback{% endblock %}
+
+{% block subtitle %}
+Transmit Your Message to Base Station
+{% endblock %}
+
+{% block content %}
+
+<section class="box">
+  <h3 class="section-title">Terminal Input</h3>
+
+  <p class="description">
+    Silakan kirimkan saran, kritik, atau masukan untuk pengembangan sistem ini
+    ke depannya.
+  </p>
+
+  <form class="feedback-form">
+
+    <h3 class="section-title">Formulir Kontak & Saran</h3>
+
+    <p class="form-subtitle">
+      Mohon isi formulir berikut dengan lengkap dan jujur.
+    </p>
+
+    <!-- Nama -->
+    <div class="form-group">
+      <label for="inputName">Nama Lengkap</label>
+
+      <input
+        type="text"
+        name="nama_lengkap"
+        id="inputName"
+        placeholder="Masukkan nama lengkap"
+        required
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="inputEmail">Alamat Email</label>
+
+      <input
+        type="email"
+        name="alamat_email"
+        id="inputEmail"
+        placeholder="contoh@email.com"
+        required
+      />
+    </div>
+
+    <!-- Rating -->
+    <div class="form-group">
+      <label for="rating">
+        Rating Kepuasan Website (Skala 1–10)
+      </label>
+
+      <input
+        type="number"
+        id="rating"
+        name="rating"
+        min="1"
+        max="10"
+        required
+      />
+    </div>
+
+    <!-- Rekomendasi -->
+    <div class="form-group">
+      <label>Bagaimana pendapatmu tentang website ini?</label>
+
+      <div class="radio-group">
+
+        <label>
+          <input type="radio" name="rekom" value="Sangat Bagus" />
+          Sangat Bagus
+        </label>
+
+        <label>
+          <input type="radio" name="rekom" value="Bagus" />
+          Bagus
+        </label>
+
+        <label>
+          <input type="radio" name="rekom" value="Lumayan Bagus" />
+          Lumayan Bagus
+        </label>
+
+        <label>
+          <input type="radio" name="rekom" value="Cukup Bagus" />
+          Cukup Bagus
+        </label>
+
+      </div>
+    </div>
+
+    <!-- Topik -->
+    <div class="form-group">
+      <label>Topik yang paling menarik bagimu:</label>
+
+      <div class="checkbox-group">
+
+        <label>
+          <input type="checkbox" name="topik" value="Biodata" />
+          Biodata
+        </label>
+
+        <label>
+          <input type="checkbox" name="topik" value="Jadwal" />
+          Jadwal
+        </label>
+
+        <label>
+          <input type="checkbox" name="topik" value="Galeri" />
+          Galeri
+        </label>
+
+      </div>
+    </div>
+
+    <!-- Bidang -->
+    <div class="form-group">
+      <label for="bidang">
+        Saran Pengembangan di Bidang:
+      </label>
+
+      <select name="bidang" id="bidang">
+
+        <option value="">
+          -- Pilih Bidang --
+        </option>
+
+        <option value="CSS">
+          CSS
+        </option>
+
+        <option value="Desain Website">
+          Desain Website
+        </option>
+
+      </select>
+    </div>
+
+    <!-- Pesan -->
+    <div class="form-group">
+      <label for="pesan">
+        Pesan atau Saran Lengkap:
+      </label>
+
+      <textarea
+        name="pesan"
+        id="pesan"
+        rows="5"
+        placeholder="Tulis pesan atau saran di sini..."
+      ></textarea>
+    </div>
+
+    <!-- Tombol -->
+    <div class="button-group">
+      <button type="reset" class="btn-reset">
+        Atur Ulang
+      </button>
+
+      <button type="submit" class="btn-submit">
+        Kirim Feedback
+      </button>
+    </div>
+
+  </form>
+</section>
+
+{% endblock %}

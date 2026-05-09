@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Gallery | My Works
+{% endblock %}
+
+{% block page_title %}
+Visual Journey
+{% endblock %}
+
+{% block subtitle %}
+Dokumentasi, karya, dan inspirasi visual
+{% endblock %}
+
+{% block content %}
+
+<!-- Gallery Section -->
+<section class="box">
+
+  <div class="section-header">
+    <h3 class="section-title">
+      Digital Gallery
+    </h3>
+
+    <p class="section-description">
+      Beberapa dokumentasi visual dan karya yang menjadi bagian
+      dari perjalanan belajar dan eksplorasi kreatif saya.
+    </p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <!-- Gallery Item -->
+    <figure class="gallery-card">
+
+      <img
+        src="{% static 'image/mobil.jpg' %}"
+        alt="Fotografi mobil"
+      />
+
+      <figcaption>
+        Automotive Photography
+      </figcaption>
+
+    </figure>
+
+    <!-- Gallery Item -->
+    <figure class="gallery-card">
+
+      <img
+        src="{% static 'image/merbabu.jpg' %}"
+        alt="Pemandangan Gunung Merbabu"
+      />
+
+      <figcaption>
+        Mount Merbabu View
+      </figcaption>
+
+    </figure>
+
+    <!-- Gallery Item -->
+    <figure class="gallery-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=400"
+        alt="Aktivitas coding malam hari"
+      />
+
+      <figcaption>
+        Late Night Coding Session
+      </figcaption>
+
+    </figure>
+
+    <!-- Gallery Item -->
+    <figure class="gallery-card">
+
+      <img
+        src="{% static 'image/art.jpg' %}"
+        alt="Digital Concept Art"
+      />
+
+      <figcaption>
+        Digital Concept Art
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+<!-- Video Section -->
+<section class="box">
+
+  <div class="section-header">
+
+    <h3 class="section-title">
+      Featured Video
+    </h3>
+
+    <p class="section-description">
+      Video pilihan yang memberikan inspirasi dan motivasi
+      dalam perjalanan belajar teknologi.
+    </p>
+
+  </div>
+
+  <div class="video-container">
+
+    <iframe
+      src="https://www.youtube.com/embed/z5aawhOrkec"
+      title="Featured YouTube Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+  </div>
+
+</section>
+
+{% endblock %}
